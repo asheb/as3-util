@@ -21,6 +21,11 @@ package asheb.view {
 			return c
 		}
 
+		public function putLeftwardAbove(x:int, y:int, c:DisplayObject) {
+			put(x - c.width, y - c.height, c)
+		}
+
+
 		protected function clear():void {
 			while (numChildren) removeChildAt(0)
 			graphics.clear()
